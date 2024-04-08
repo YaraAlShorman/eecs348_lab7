@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Practice 2</title>
+    <style>
+        .container {
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .control-panel {
+            margin-bottom: 20px;
+        }
+
+        p {
+            padding: 10px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Color and Border Control</h1>
+        <div class="control-panel">
+            <label for="color-input">RGB Color (e.g., 255, 0, 0 for red):</label>
+            <input type="text" id="color-input" placeholder="Enter RGB values">
+
+            <label for="border-width-input">Border Width (in pixels):</label>
+            <input type="number" id="border-width-input" min="0" placeholder="Enter border width">
+
+            <button onclick="applyStyles()">Apply</button>
+        </div>
+        <div id="content">
+            <p id="dummy-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla maximus risus in arcu pulvinar dignissim.</p>
+        </div>
+    </div>
+    <script>
+        function applyStyles() {
+            var colorInput = document.getElementById('color-input').value.trim();
+            var borderWidthInput = document.getElementById('border-width-input').value.trim();
+
+            var paragraph = document.getElementById('dummy-text');
+            paragraph.style.color = 'rgb(' + colorInput + ')';
+            paragraph.style.borderColor = 'rgb(' + colorInput + ')';
+            paragraph.style.borderWidth = borderWidthInput + 'px';
+        }
+    </script>
+</body>
+</html>
+

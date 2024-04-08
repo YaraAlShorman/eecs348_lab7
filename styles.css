@@ -1,0 +1,44 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.image {
+    float: left;
+    margin-right: 20px;
+}
+
+.text {
+    overflow: hidden; /* Clear float */
+}
+
+h1 {
+      font-family: Arial, sans-serif;
+}
+
+p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+img {
+    max-width: 300;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Centers the image */
+    border-radius: 8px; /* Adds a rounded border */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Centers the video */
+    border-radius: 8px; /* Adds a rounded border */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
